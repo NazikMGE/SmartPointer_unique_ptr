@@ -35,10 +35,10 @@ public:
             });
 
         if (result == f1->end()) {
-            cout << "Òåðì³í íå çíàéäåíî!";
+            cout << "Ð¢ÐµÑ€Ð¼Ñ–Ð½ Ð½Ðµ Ð·Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾!";
         }
         else {
-            cout << "Òåðì³í Çíàéäåíî !\n" << endl;
+            cout << "Ð¢ÐµÑ€Ð¼Ñ–Ð½ Ð—Ð½Ð°Ð¹Ð´ÐµÐ½Ð¾ !\n" << endl;
 
             cout << "  " << result->first << ":" << endl;
             for (int i = 0; i < result->second.begin()->size(); i++) {
@@ -61,9 +61,9 @@ class Menu : public HelpCenter {
 public:
     void mainMenu() {
         int choice = 0;
-        cout << "1. Äîáàâèòè íîâèé òåðì³í" << endl;
-        cout << "2. Âèâåñòè âñ³ òåðì³íè" << endl;
-        cout << "3. Çíàéòè òåðì³í" << endl;
+        cout << "1. Ð”Ð¾Ð±Ð°Ð²Ð¸Ñ‚Ð¸ Ð½Ð¾Ð²Ð¸Ð¹ Ñ‚ÐµÑ€Ð¼Ñ–Ð½" << endl;
+        cout << "2. Ð’Ð¸Ð²ÐµÑÑ‚Ð¸ Ð²ÑÑ– Ñ‚ÐµÑ€Ð¼Ñ–Ð½Ð¸" << endl;
+        cout << "3. Ð—Ð½Ð°Ð¹Ñ‚Ð¸ Ñ‚ÐµÑ€Ð¼Ñ–Ð½" << endl;
         cout << "  Your choice -> ";
         cin >> choice;
 
@@ -83,7 +83,7 @@ public:
         if (choice == 3) {
             system("cls");
             string name;
-            cout << "Ââåä³òü òåðì³í ÿêèé øóêàºòå: ";
+            cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ñ‚ÐµÑ€Ð¼Ñ–Ð½ ÑÐºÐ¸Ð¹ ÑˆÑƒÐºÐ°Ñ”Ñ‚Ðµ: ";
             getline(cin >> ws, name);
             findHelp(name);
             cout << "\n" << "Press any button to continue ...";
@@ -100,9 +100,9 @@ public:
     void addTerm() {
         string key;
         string exp;
-        cout << "Ââåä³òü êëþ÷îâå ñëîâî ";
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ ÐºÐ»ÑŽÑ‡Ð¾Ð²Ðµ ÑÐ»Ð¾Ð²Ð¾ ";
         getline(cin >> ws, key);
-        cout << "Ââåä³òü ïîÿñíåííÿ äî ñëîâà (íå á³ëüøå 5 ðÿäê³â). Äëÿ çàâåðøåííÿ ââåä³òü 0" << endl;
+        cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð¿Ð¾ÑÑÐ½ÐµÐ½Ð½Ñ Ð´Ð¾ ÑÐ»Ð¾Ð²Ð° (Ð½Ðµ Ð±Ñ–Ð»ÑŒÑˆÐµ 5 Ñ€ÑÐ´ÐºÑ–Ð²). Ð”Ð»Ñ Ð·Ð°Ð²ÐµÑ€ÑˆÐµÐ½Ð½Ñ Ð²Ð²ÐµÐ´Ñ–Ñ‚ÑŒ 0" << endl;
 
         vec->push_back({});
         auto p = vec->end() - 1;
